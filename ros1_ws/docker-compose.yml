@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+
+  simulation:
+    image: jonasvautherin/px4-gazebo-headless:1.12.3
+    network_mode: "host"
+    command: 172.17.0.1
+    stdin_open: true
+    tty: true
+    ipc: host
+    environment:
+      COM_RCL_EXCEPT: 4
+
+  drone:
+    image: iftahnaf/interception:v15
+    network_mode: "host"
+    stdin_open: true
+    tty: true
+    ipc: host
+    volumes: 
+     - /home/iftach/bagfiles:/bags

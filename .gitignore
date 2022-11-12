@@ -1,0 +1,6 @@
+ros1_ws/build/
+ros1_ws/log/
+ros1_ws/devel/
+ros1_ws/.catkin_workspace
+vscode/
+*.pyc
