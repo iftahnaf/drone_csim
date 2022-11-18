@@ -19,28 +19,6 @@ class DroneInitialize():
 
         self.state = State()
 
-        rospy.set_param('/mavros/interception/t_x', 50.0)
-        rospy.set_param('/mavros/interception/t_y', 50.0)
-        rospy.set_param('/mavros/interception/t_z', 50.0)
-        
-        rospy.set_param('/mavros/interception/t_vx', 0.0)
-        rospy.set_param('/mavros/interception/t_vy', 0.0)
-        rospy.set_param('/mavros/interception/t_vz', 0.0)
-
-        rospy.set_param('/mavros/interception/m', 0.0)
-        rospy.set_param('/mavros/interception/max_thrust', 1.0)
-        rospy.set_param('/mavros/interception/min_tgo', 0.01)
-        rospy.set_param('/mavros/interception/xf', 0.0)
-        rospy.set_param('/mavros/interception/yf', 0.0)
-        rospy.set_param('/mavros/interception/zf', 2.0)
-        rospy.set_param('/mavros/interception/delta_rho', 10.0)
-        rospy.set_param('/mavros/interception/rho_u', 70.0)
-        rospy.set_param('/mavros/interception/g', 9.81)
-        rospy.set_param('/mavros/interception/mass', 1.5)
-        rospy.set_param('/mavros/interception/max_dist', 260.0)
-        rospy.set_param('/mavros/interception/max_height', 100.0)
-        rospy.set_param('/mavros/interception/k_gui', 0.07)
-
         self.tx = rospy.get_param('/mavros/interception/t_x')
         self.ty = rospy.get_param('/mavros/interception/t_y')
         self.tz = rospy.get_param('/mavros/interception/t_z')
